@@ -1,12 +1,30 @@
+// add current dates
+var now = new Date();
+$("#currentDay").append(now);
 // add rows
-// add current time
-// add button
+// add buttons
 // add eventlisner
-// local Storage 
-$(document).ready(function(){ 
-    $(".save-button").on("click", function(){ 
-        var entryTime = $(this).parent().attr("id");
-        var userEntry = $(this).siblings(".block-entry").val();
-        localStorage.setItem(entryTime, userEntry);
+// local Storage(save after refreash the page)
+// rows color-coded to indicate past, present, or future
+$(document).ready(function () {
+    $("button").on("click", function (event) {
+        event.preventDefault();
+        storageEven();
     });
+    
+    function storageEven() {
+        var noteInput = $(".block-entry").val()
+        localStorage.setItem("to-do", noteInput);
+        console.log(noteInput)
+    };
+
+    var noteOutput = localStorage.getItem("to-do");
+    $(".block-entry").val(noteOutput);
 });
+
+
+// $("button").click(function () {
+//     $(this).append("the button")
+// });
+
+
