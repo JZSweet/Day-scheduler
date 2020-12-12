@@ -7,3 +7,4 @@ a simple calendar application that allows a user to save events for each hour of
 * block is color-coded to indicate whether the event is in the past, present, or future.
 * click the save button for that time block then that event is saved in local storage.
 * refresh the page then the saved events persist.
+![alt text](page.png)
