@@ -4,12 +4,9 @@ $("#currentDay").append(now);
 // add eventlisner
 // local Storage(save after refreash the page)
 $(document).ready(function () {
-    $(".button").each(function () {
-        // $(".button").on("click", function (event) {
-        $(this).click(function (event) {
-            event.preventDefault();
-            storageEven();
-        });
+    $(".button").on("click", function (event) {
+        event.preventDefault();
+        storageEven();
     });
     function storageEven() {
         var noteInput = $(".block-entry").val()
