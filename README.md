@@ -1,11 +1,18 @@
 # Day-scheduler
 
-https://jzsweet.github.io/Day-scheduler/
-a simple calendar application that allows a user to save events for each hour of the day.
+## UPL
+ https://jzsweet.github.io/Day-scheduler/
 
-* the current day is displayed at the top of the calendar when scroll down.
-* click into a time block then user can enter an event.
-* block is color-coded to indicate whether the event is in the past, present, or future.
-* click the save button for that time block then that event is saved in local storage.
-* refresh the page then the saved events persist.
-![alt text](page.png)
+## Description
+A simple calendar application that allows a user to save events for each hour of the day.
+
+## Function
+
+* The current day is displayed at the top of the calendar when scroll down.
+* Click into a time block then user can enter an event.
+* Block is color-coded to indicate whether the event is in the past, present, or future.
+* Click the save button for that time block then that event is saved in local storage.
+* Refresh the page then the saved events persist.
+
+## Img
+![home page](page.png)
