@@ -2,7 +2,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
-  background-color: rgb(190, 233, 246);
+  background-color: rgb(212, 238, 246);
 }
 
 textarea{
@@ -45,17 +45,17 @@ textarea{
 
 .past {
   background-color: #e4ee88;
-  color: white;
+  color: rgb(37, 26, 26);
 }
 
 .present {
   background-color: #fa7b74;
-  color: white;
+  color: rgb(47, 36, 36);
 }
 
 .future {
   background-color: #022902;
-  color: white;
+  color: rgb(158, 141, 141);
 }
 
 .saveBtn {

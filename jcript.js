@@ -9,28 +9,17 @@ var checkTime = function (block) {
     console.log(time , moment().hour())
     if (time < moment().hour()) {
         block.addClass("past");
-    } else if (moment().isBefore(hour)) {
-        $(".hour").addClass(".future");
+    } else if (time > moment().hour()) {
+        block.addClass("future");
     } else {
-        $(".hour").addClass(".present");
+        block.addClass("present");
     }
 }
 
 checkTime($(".block"));
 
 console.log("this is a block", $(".block").data())
-// $("textarea").each(function () {
-//     var name = parseInt($(this).attr("name"));
-//     if (name < hour) {
-//         $(this).addClass("past");
-//     } else if (name > hour) {
-//         $(this).addClass("future");
-//     } else if (name === hour) {
-//         $(this).addClass("present");
-//     }
-// });
 
-// local storage IDs & keys
 $(document).ready(function () {
     getTodo(".block-entry", "to-do")
     getTodo(".block-entry1", "to-do1")
