@@ -1,6 +1,6 @@
 # Day-scheduler
 
-## UPL
+## URL
  https://jzsweet.github.io/Day-scheduler/
 
 ## Description
