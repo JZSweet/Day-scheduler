@@ -2,21 +2,25 @@
 var date = moment().format("MMMM Do YYYY");
 $("#currentDay").append(date);
 var hour = parseInt(moment().format("HH"));
+$("#currentDay").append("Hour:",hour);
 
 // rows color-coded to indicate past, present, or future
-var checkTime = function (block) {
-    var time = block.data().hours
-    console.log(time , moment().hour())
-    if (time < moment().hour()) {
-        block.addClass("past");
-    } else if (time > moment().hour()) {
-        block.addClass("future");
-    } else {
-        block.addClass("present");
-    }
-}
+function checktime() {
+    $(".block").each(function () {
+        console.log("whats this", $(this))
+        var time = $(this).data().hours;
 
-checkTime($(".block"));
+        if (time < moment().hour()) {
+            $(this).addClass("past")
+        } else if (time > moment().hour()) {
+            $(this).addClass("future")
+        } else {
+            $(this).addClass("present")
+        };
+    });
+};
+checktime($(".block"));
+
 
 console.log("this is a block", $(".block").data())
 

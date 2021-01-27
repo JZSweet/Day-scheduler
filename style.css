@@ -2,7 +2,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
-  background-color: rgb(212, 238, 246);
+  background-color: rgb(164, 157, 190)
 }
 
 textarea{
@@ -44,18 +44,18 @@ textarea{
 }
 
 .past {
-  background-color: #e4ee88;
-  color: rgb(37, 26, 26);
+  background-color: #d5cfe1;
+  color: rgb(17, 16, 16);
 }
 
 .present {
-  background-color: #fa7b74;
-  color: rgb(47, 36, 36);
+  background-color: #e9e7ef;
+  color: rgb(17, 16, 16);
 }
 
 .future {
-  background-color: #022902;
-  color: rgb(158, 141, 141);
+  background-color: #d8c4c4;
+  color: rgb(17, 16, 16);
 }
 
 .saveBtn {
