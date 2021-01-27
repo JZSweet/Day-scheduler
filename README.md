@@ -15,4 +15,5 @@ A simple calendar application that allows a user to save events for each hour of
 * Refresh the page then the saved events persist.
 
 ## Img
-![home page](page.png)
+![home page](1.png)
+![home page](2.png)
